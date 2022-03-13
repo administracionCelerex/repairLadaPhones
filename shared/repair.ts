@@ -1,5 +1,9 @@
 export const removeBlankSpaces = (number: String) => {
-  const numberWithoutBlank = number.replaceAll(" ", "").replaceAll("\t", "");
+  const numberWithoutBlank = number
+    .replaceAll(" ", "")
+    .replaceAll("\t", "")
+    .replaceAll("/s/g", "")
+    .replaceAll(String.fromCharCode(160), "");
   return numberWithoutBlank;
 };
 
