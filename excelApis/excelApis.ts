@@ -31,9 +31,16 @@ export const writeJson = (path: string, data: dataExcel[]) => {
     const JSONData = data.map((da) => {
       const phoneNumbersString = da.telefonosGmail.split(",");
 
-      const phoneNumbers = phoneNumbersString.map((phoneNum) => {
+      const phoneNumbers = phoneNumbersString.map((phoneNum, index) => {
+        let type = "Otro";
+        if (index == 0) {
+          type = "Principal";
+        }
+        if (index == 1) {
+          type = "Movil";
+        }
         return {
-          type: "Principal",
+          type,
           value: phoneNum == "***" ? "" : phoneNum,
         };
       });
