@@ -12,7 +12,7 @@ a un numero. crea un Ecxel y un JSON(ver uso) con todo corregido
 
 1. Descargue el archivo .zip o clone el repositorio
 2. descomprima el archivo en el lugar deseado
-3. abra una terminar donde se descomprimio la carpeta
+3. abra una terminar dentro de la carpeta que se descomprimio 
 4. ejecute el comando **npm install** (esto descargara todas las dependecias, debe generarse el folder node_modules)
 5. crear un folder llamado **data** al nivel de los otros folders:
 6. Poner dentro de data el archivo con nombre **extension.xlsx**(este se genera manualmente con filtros en Ecxel al archivo de comparacion de contactos) debe ser como el siguiente
@@ -24,7 +24,7 @@ a un numero. crea un Ecxel y un JSON(ver uso) con todo corregido
 |                     |                             |                         |                   |                   |                    |                          |
 
 
-7. ejecutar el comando tsc en la terminar en la ruta donde esta el proyecto, esto debe crear los archivos con extension **.js**
+7. ejecutar el comando tsc en la terminar, debe estar dentro del folder descomprimido. Esto debe crear los archivos con extension **.js**
 
 8. ejecutar el comando **node app.js**
 9. los resultados se iran a la carpeta data, se debieron crear
@@ -53,7 +53,7 @@ repairLadaPhones
 └───data
 |   |   extension.xlsx(se debe pegar aqui)
 |   |   data.json (se genera al correr el sistema)
-|   |   extensionRepaired.xlsx
+|   |   extensionRepaired.xlsx (se genera al correr el sistema)
 |
 |
 |
